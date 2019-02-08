@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+  <body>
+    <div class="container">
+    <% if (countAll == 0) { %>
+      <h1 class="grey">No tasks yet...</h1>
+      <% } else if(countAll != 0 && countAll == countComplete ) { %>
+        <h1 class="green">We are great! All done!</h1>
+      <% } else { %>
+    <h1>Completed assignments <%=countComplete%>/<%=countAll%></h1>
+    <% } %>
+    <% list.forEach(function(data, index){ %>
+      <% if(data.success == true) {%>
+      <li class="through"><%=data.name%></li>
+      <% } else {%>
+      <li><%=data.name%> <a onclick="del(<%=index%>)">cross out</a></li>
+      <% } %>
+    <% }); %>
+    <form method="post" class="form">
+      <input type="text" name="task" class="sendInput">
+      <input type="submit" value="Add">
+    </form>
+  </div>
+  </body>
+  <script src="/js/main.js"></script>
+</html>

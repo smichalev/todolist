@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic,latin);
+
+li {
+  font-family: 'Bad Script', cursive;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: royalblue;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-left: 20px;
+}
+h1 {
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+body {
+  background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+  background-size: 15px 15px;
+  background-position: center center;
+}
+a {
+  font-family: 'Bad Script', cursive;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
+.through {
+  text-decoration: line-through;
+}
+.green {
+  color: green;
+}
+.grey {
+  color: grey;
+}
+.container {
+  display: block;
+  text-align: center;
+}
+.form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
