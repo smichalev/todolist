@@ -28,10 +28,6 @@ app.get('/delete/:index', function(req, res){
   res.redirect('/');
 });
 
-app.get('/test', function(req, res){
-  res.sendStatus(404);
-});
-
 app.listen(port, function(){
   console.log('Server start at port', port);
 });
